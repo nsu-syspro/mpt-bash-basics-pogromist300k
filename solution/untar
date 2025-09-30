@@ -1,4 +1,4 @@
 #!/bin/bash
 
-dir=$(mkdir -p "$1.unpacked")
-tar -xf $1 -C "$dir"
+mkdir -p "$1.unpacked"
+tar -xf $1 -C "$1.unpacked/"
