@@ -1,8 +1,8 @@
 #!/bin/bash
 
 direct_order=$(mktemp -p ./)
-while read -r line; do
-  echo $line >> $direct_order
+while read -r "line"; do
+  echo "$line" >> "$direct_order"
 done
-tac $direct_order
-rm $direct_order
+tac "$direct_order"
+rm "$direct_order"
