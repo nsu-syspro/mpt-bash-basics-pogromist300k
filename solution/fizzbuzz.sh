@@ -3,7 +3,7 @@
 for ((i = 1; i <= $1; i++)); do
   if !((i % 3)); then
     if !((i % 5)); then
-      echo "Fizz buzz"
+      echo "Fizz Buzz"
     else 
       echo "Fizz"
     fi
